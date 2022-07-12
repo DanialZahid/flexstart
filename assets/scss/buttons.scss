@@ -1,0 +1,55 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  width: max-content;
+  background-color: $color-theme;
+  border-radius: 8px;
+  font: 700 16px "Nunito", Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: $color-white;
+
+  svg {
+    fill: $color-white;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: #2a3def;
+    color: $color-white;
+
+    svg {
+      transform: translateX(10px);
+    }
+  }
+}
+
+// Back to top
+
+.scroll-top {
+  cursor: pointer;
+  padding: 12px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  animation: scale-down 250ms ease-in-out;
+  transition: $ease-in-out-250;
+  visibility: hidden;
+  opacity: 0;
+
+  &:focus,
+  &:hover,
+  &:active {
+    svg {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.show-scroll-to-top-btn {
+  visibility: visible;
+  opacity: 1;
+  animation: scale-up 250ms ease-in-out;
+}

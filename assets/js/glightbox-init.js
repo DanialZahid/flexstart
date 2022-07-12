@@ -1,0 +1,3 @@
+// Initialize GLightbox
+
+lightbox = GLightbox();

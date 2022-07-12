@@ -1,0 +1,45 @@
+@import "./../variables";
+@import "./global-subpage";
+
+iframe {
+  border-radius: 12px;
+  border: 0;
+  height: 500px;
+}
+
+.col-sm-lg {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+input,
+textarea {
+  border: $border-input;
+}
+
+.icon-info {
+  background: $color-theme;
+  padding: 8px;
+  border-radius: 50px;
+  fill: $color-white;
+  transition: $ease-in-out-150;
+  border: 1px solid transparent;
+
+  svg {
+    transition-duration: 50ms;
+  }
+}
+
+.wrapper-solid {
+  &:focus,
+  &:hover,
+  &:active {
+    .icon-info {
+      fill: $color-theme;
+      background-color: $color-white;
+      border-color: $color-theme;
+    }
+  }
+}
+
+@import "./../media-queries";

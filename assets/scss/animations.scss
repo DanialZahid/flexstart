@@ -1,0 +1,83 @@
+// Portfolio filter
+
+@keyframes show-filter-item {
+  from {
+    width: 0;
+    height: 0;
+  }
+
+  to {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@keyframes hide-filter-item {
+  from {
+    width: 400px;
+    height: 400px;
+  }
+
+  to {
+    width: 0;
+    height: 0;
+  }
+}
+
+// Tabs
+
+@keyframes tab-content-active {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Scale up/down
+
+@keyframes scale-up {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-down {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.8);
+  }
+}
+
+// Slide up/down
+
+@keyframes slide-up {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-50px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

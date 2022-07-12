@@ -1,0 +1,45 @@
+// Site width
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+// Row as flex container
+
+.row {
+  display: flex;
+}
+
+// Wrap flex container for row direction
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+// Single column as flex container
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+// Columns as grid container
+
+.col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.col-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.col-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
