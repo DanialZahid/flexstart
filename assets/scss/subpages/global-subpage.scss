@@ -1,0 +1,126 @@
+// Header
+
+.header-static {
+  animation: slide-down 350ms ease-in-out;
+  position: static;
+}
+
+.header-fixed {
+  animation: slide-down 350ms ease-in-out;
+}
+
+.breadcrumb {
+  background-color: $color-heading;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-subpage {
+  background-color: $color-white;
+  padding: 4px 16px;
+  border-radius: 50px;
+
+  svg {
+    fill: $color-text;
+  }
+
+  a {
+    padding: 0;
+  }
+}
+
+h1 {
+  color: $color-white;
+}
+
+.title-subpage {
+  text-transform: none;
+  font-size: 36px;
+  color: $color-heading;
+  text-align: center;
+}
+
+// Layouts
+
+.col-lg-sm {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.wrapper-card {
+  h2 {
+    text-transform: none;
+    font-size: 26px;
+    color: $color-heading;
+  }
+}
+
+.pv-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+// Sidebar
+
+aside {
+  h3 {
+    font-size: 18px;
+  }
+
+  a {
+    &:focus,
+    &:hover,
+    &:active {
+      h3 {
+        color: $color-link-active;
+      }
+    }
+  }
+
+  input {
+    border: $border-input;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  time {
+    font-size: 14px;
+  }
+
+  img {
+    border-radius: 8px;
+  }
+
+  article {
+    a {
+      &:hover,
+      &:focus,
+      &:active {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+// Miscellaneous
+
+blockquote {
+  background-color: rgba($color: $color-offwhite-2, $alpha: 1);
+  padding: 24px;
+  border-radius: 8px;
+  border-left: 5px solid $color-theme;
+}
+
+hr {
+  border: 1px solid rgba($color: $color-theme, $alpha: 0.3);
+  border-radius: 50px;
+  width: 100%;
+  margin: 0;
+}
+
+.list-bullet {
+  list-style: inside disc;
+  padding-left: 32px;
+}

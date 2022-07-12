@@ -1,0 +1,43 @@
+// Alignments (ai = align-items, jc = justify-content)
+
+.ai-start {
+  align-items: flex-start;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-self-center {
+  align-self: center;
+}
+
+.ai-stretch {
+  align-items: stretch;
+}
+
+.ai-self-end {
+  align-self: flex-end;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+// Text alignments
+
+.at-left {
+  text-align: left;
+}
+
+.at-center {
+  text-align: center;
+}

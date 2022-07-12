@@ -1,0 +1,33 @@
+@import "./../variables";
+@import "./global-subpage";
+
+// Swiper
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 600px;
+}
+
+.swiper-slide {
+  transition: $ease-in-out-250;
+  height: auto;
+}
+
+.project-img {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  img {
+    border-radius: 12px;
+  }
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+@import "./../media-queries";

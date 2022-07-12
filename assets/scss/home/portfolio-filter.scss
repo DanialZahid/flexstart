@@ -1,0 +1,142 @@
+.portfolio-overlay {
+  position: absolute;
+  background: rgba($color: $color-white, $alpha: 0.7);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: $ease-in-out-250;
+  border-radius: 12px;
+  animation: scale-down 250ms ease-in-out;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+  }
+
+  &::before {
+    border-top: 3px solid rgba($color: $color-theme, $alpha: 0.3);
+    border-left: 3px solid rgba($color: $color-theme, $alpha: 0.3);
+    top: 0;
+    left: 0;
+    transform: translate(30px, 30px);
+  }
+
+  &::after {
+    border-bottom: 3px solid rgba($color: $color-theme, $alpha: 0.3);
+    border-right: 3px solid rgba($color: $color-theme, $alpha: 0.3);
+    bottom: 0;
+    right: 0;
+    transform: translate(-30px, -30px);
+  }
+}
+
+.portfolio {
+  .icon {
+    background: $color-theme;
+    padding: 8px;
+    border-radius: 50px;
+    fill: $color-white;
+    transition-duration: 50ms;
+
+    &:focus,
+    &:hover,
+    &:active {
+      fill: $color-theme;
+      background-color: $color-white;
+    }
+  }
+
+  img {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+}
+
+.filter-menu {
+  justify-content: center;
+
+  li {
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-weight: 700;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid $color-theme;
+    padding: 8px 24px;
+    color: $color-theme;
+    cursor: pointer;
+    transition: $ease-in-out-150;
+
+    &:focus,
+    &:hover,
+    &:active {
+      background-color: $color-theme;
+      color: $color-white;
+    }
+  }
+
+  .current {
+    background-color: $color-theme;
+    color: $color-white;
+  }
+}
+
+.filter-item {
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    width: 400px;
+    height: 400px;
+    margin: 8px;
+  }
+
+  li {
+    position: relative;
+
+    &:focus,
+    &:hover,
+    &:active {
+      .portfolio-overlay {
+        visibility: visible;
+        opacity: 1;
+        animation: scale-up 250ms ease-in-out;
+      }
+    }
+
+    &.active {
+      img {
+        animation: show-filter-item 700ms ease;
+        transition: $ease-in-out-250;
+      }
+    }
+
+    &.delete {
+      img {
+        animation: hide-filter-item 700ms ease;
+        transition: $ease-in-out-250;
+        width: 0;
+        height: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.gslide-description {
+  display: none;
+}
+
+.gbtn {
+  transition: $ease-in-out-150;
+}
+
+.gslide-image img {
+  border-radius: 12px;
+}

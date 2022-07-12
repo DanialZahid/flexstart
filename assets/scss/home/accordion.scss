@@ -1,0 +1,68 @@
+.accordion {
+  border-bottom: 1px solid #ccc;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  h3 {
+    pointer-events: none;
+    font-size: 20px;
+    transition: $ease-in-out-150;
+  }
+}
+
+.accordion-title {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 16px 0;
+
+  // Toggle icon
+
+  svg {
+    pointer-events: none;
+    fill: $color-heading;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    h3 {
+      color: $color-theme;
+    }
+
+    svg {
+      fill: $color-theme;
+    }
+  }
+}
+
+.accordion-content {
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 350ms ease-in-out;
+  animation: slide-up 350ms ease-in-out;
+}
+
+.accordion-active ~ .accordion-content {
+  max-height: 100vh;
+  visibility: visible;
+  opacity: 1;
+  padding-bottom: 16px;
+  animation: slide-down 350ms ease-in-out;
+}
+
+.accordion-active {
+  h3 {
+    color: $color-theme;
+  }
+
+  svg {
+    transform: rotate(180deg);
+    fill: $color-theme;
+  }
+}

@@ -1,0 +1,57 @@
+.tabs {
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: -1px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: $ease-in-out-150;
+
+  h3 {
+    font-size: 20px;
+    color: $color-heading;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-bottom-color: $color-theme;
+
+    h3 {
+      color: $color-theme;
+    }
+  }
+}
+
+.tab-active {
+  border-bottom-color: $color-theme;
+
+  h3 {
+    color: $color-theme;
+  }
+}
+
+.tab-content {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+
+  .icon-check {
+    fill: $color-theme;
+  }
+}
+
+.tab-content-active {
+  opacity: 1;
+  visibility: visible;
+  max-height: 100vh;
+  animation: tab-content-active 250ms ease-in-out;
+}
+
+.highlight {
+  font: 700 18px "Nunito", Helvetica, sans-serif;
+  color: $color-heading;
+}

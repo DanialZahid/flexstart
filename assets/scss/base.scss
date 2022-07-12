@@ -1,0 +1,216 @@
+// Layout
+
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  cursor: default;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 16px "Open Sans", Helvetica, sans-serif;
+  color: $color-text;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+// Header
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  transition: $ease-in-out-250;
+
+  .btn {
+    width: 100%;
+  }
+}
+
+nav a {
+  display: flex;
+  font: $font-nav;
+  color: $color-nav;
+  padding: 8px;
+  text-decoration: none;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $color-theme;
+  }
+}
+
+// Link
+
+a {
+  display: inline-flex;
+  align-items: center;
+  color: $color-theme;
+  text-decoration: none;
+  transition: $ease-in-out-150;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $color-link-active;
+  }
+}
+
+// Image
+
+img {
+  display: block;
+  max-width: 100%;
+  transition: $ease-in-out-250;
+  object-fit: cover;
+}
+
+// Text content
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Nunito", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1,
+h3,
+h4 {
+  color: $color-heading;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-theme;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p,
+span,
+blockquote {
+  line-height: 2;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+// Form
+
+form {
+  .btn {
+    border: 0;
+    cursor: pointer;
+    transition: $ease-in-out-150;
+  }
+}
+
+input,
+textarea {
+  font: 14px "Open Sans", Helvetica, sans-serif;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  outline-color: $color-theme;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+// Footer
+
+footer {
+  font-size: 14px;
+
+  h2 {
+    font-size: 16px;
+    color: $color-heading;
+  }
+
+  a {
+    font: 400 14px "Nunito", Helvetica, sans-serif;
+    padding: 0;
+  }
+
+  .col-4 {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+
+  .icon-social {
+    background: $color-theme;
+    padding: 8px;
+    border-radius: 50px;
+    fill: $color-white;
+    transition: $ease-in-out-150;
+
+    &:focus,
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+
+  .icon-right-chevron {
+    fill: #a0a9f8;
+  }
+
+  .icon-email,
+  .icon-phone,
+  .icon-location {
+    fill: $color-theme;
+  }
+}
+
+// Miscellaneous
+
+small {
+  font-size: 14px;
+}
+
+svg {
+  transition: $ease-in-out-150;
+}
