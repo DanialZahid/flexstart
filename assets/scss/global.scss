@@ -162,27 +162,6 @@
   color: $color-theme;
 }
 
-// All styles
-
-.section-title {
-  text-align: center;
-
-  p {
-    font-size: 40px;
-    font-weight: 700;
-    color: $color-heading;
-    line-height: 1.2;
-  }
-}
-
-.size-text-30 {
-  font-size: 30px;
-}
-
-.bg-offwhite {
-  background-color: $color-offwhite;
-}
-
 // Footer
 
 .newsletter {
@@ -228,6 +207,27 @@
   border-bottom: 1px solid $color-offwhite-3;
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+// Miscellaneous
+
+.section-title {
+  text-align: center;
+
+  p {
+    font-size: 40px;
+    font-weight: 700;
+    color: $color-heading;
+    line-height: 1.2;
+  }
+}
+
+.size-text-30 {
+  font-size: 30px;
+}
+
+.bg-offwhite {
+  background-color: $color-offwhite;
 }
 
 .wrapper-solid {
