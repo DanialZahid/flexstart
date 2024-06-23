@@ -38,8 +38,8 @@ const projectInfo = {
 	`,
 
   externalLinks: `
-		<li><a title="On my website" href="https://flexstart.iamdanial.com/">On my website</a></li>
-		<li><a title="On GitHub" href="https://github.com/DanialZahid/flexstart">On GitHub</a></li>
+		<li><a title="View on Vercel" href="https://flexstart.vercel.app/">View on Vercel</a></li>
+		<li><a title="View on GitHub" href="https://github.com/DanialZahid/flexstart">View on GitHub</a></li>
 		`,
 
   license: `<a title="MIT" href="https://github.com/DanialZahid/flexstart/blob/main/LICENSE">MIT</a>`,

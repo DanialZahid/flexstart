@@ -6,8 +6,8 @@ FlexStart is a clean and modern website UI which is suitable for all individuals
 
 [Design](https://bootstrapmade.com/demo/templates/FlexStart/)
 
-- [On my website](https://flexstart.iamdanial.com/)
-- [On GitHub](https://github.com/DanialZahid/flexstart)
+- [View on Vercel](https://flexstart.vercel.app/)
+- [View on GitHub](https://github.com/DanialZahid/flexstart)
 
 ## License
 
